@@ -1,8 +1,26 @@
 ﻿using System;
 
-Console.Write("Guess a secret number: ");
+Console.Write("Choose a difficulty level (e, m, or h): ");
+string difficulty = Console.ReadLine().ToLower();
 
-int attemptsLeft = 4;
+int attemptsLeft = 0;
+
+switch (difficulty)
+{
+    case "e":
+        attemptsLeft = 8;
+        break;
+
+    case "m":
+        attemptsLeft = 6;
+        break;
+
+    case "h":
+        attemptsLeft = 4;
+        break;
+}
+
+Console.Write("Guess a secret number: ");
 
 int secretNumber = new Random().Next(1, 101);
 

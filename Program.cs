@@ -1,12 +1,7 @@
 ﻿using System;
 
-namespace guessing_game
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}
+Console.Write("Guess a secret number: ");
+
+int guessedNumber = int.Parse(Console.ReadLine());
+
+Console.WriteLine(guessedNumber);

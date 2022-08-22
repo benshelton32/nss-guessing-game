@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XHCLROhnyeTwhQ7sF0WpUhBmBO8RLf8WNeYmGx9As9iheWxGn0OZLmjIfYBOEYe3gYtoVBLAGmbBocBVzQT/LA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bks-4\\workspace\\guessing-game\\guessing-game.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bks-4\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

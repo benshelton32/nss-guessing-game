@@ -2,10 +2,24 @@
 
 Console.Write("Guess a secret number: ");
 
-int guessedNumber = int.Parse(Console.ReadLine());
+int attemptsLeft = 4;
 
-int secretNumber = 42;
+while (attemptsLeft > 0)
+{
+    attemptsLeft--;
 
-string result = (guessedNumber == secretNumber) ? "You guessed the secret number!" : "Sorry, try again..";
+    int guessedNumber = int.Parse(Console.ReadLine());
 
-Console.WriteLine(result);
+    int secretNumber = 42;
+
+    string wrongGuess = (attemptsLeft != 0) ? $"Sorry, try again.. You have {attemptsLeft} guesses left." : "Sorry, you're all out of tries.";
+
+    bool correct = (guessedNumber == secretNumber);
+
+    string result = (guessedNumber == secretNumber) ? "Congratulations! You guessed the secret number!" : wrongGuess;
+
+    Console.WriteLine(result);
+
+    if (correct)
+        break;
+}
